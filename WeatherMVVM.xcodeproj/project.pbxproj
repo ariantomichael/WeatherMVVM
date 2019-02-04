@@ -21,6 +21,8 @@
 		C324FA6622018871006BDD7D /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C324FA6522018871006BDD7D /* SettingsViewModel.swift */; };
 		C324FA6822019F80006BDD7D /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C324FA6722019F80006BDD7D /* SettingsTableViewCell.swift */; };
 		C324FA7B2203FF11006BDD7D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C324FA7A2203FF11006BDD7D /* Extensions.swift */; };
+		C37D953A2207F92D0097CA88 /* AddCityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D95392207F92D0097CA88 /* AddCityViewModel.swift */; };
+		C37D953D2207F9B40097CA88 /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37D953C2207F9B40097CA88 /* BindingTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		C324FA6522018871006BDD7D /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		C324FA6722019F80006BDD7D /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		C324FA7A2203FF11006BDD7D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C37D95392207F92D0097CA88 /* AddCityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityViewModel.swift; sourceTree = "<group>"; };
+		C37D953C2207F9B40097CA88 /* BindingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 		C324FA3421FEFA6A006BDD7D /* WeatherMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				C37D953B2207F98C0097CA88 /* Custom Controls */,
 				C324FA5522004505006BDD7D /* Data Source */,
 				C324FA5222001068006BDD7D /* View Model */,
 				C324FA4F2200039C006BDD7D /* Services */,
@@ -118,6 +123,7 @@
 			children = (
 				C324FA5322001094006BDD7D /* WeatherViewModel.swift */,
 				C324FA6522018871006BDD7D /* SettingsViewModel.swift */,
+				C37D95392207F92D0097CA88 /* AddCityViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -129,6 +135,14 @@
 				C324FA7A2203FF11006BDD7D /* Extensions.swift */,
 			);
 			path = "Data Source";
+			sourceTree = "<group>";
+		};
+		C37D953B2207F98C0097CA88 /* Custom Controls */ = {
+			isa = PBXGroup;
+			children = (
+				C37D953C2207F9B40097CA88 /* BindingTextField.swift */,
+			);
+			path = "Custom Controls";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,10 +223,12 @@
 				C324FA64220174FF006BDD7D /* SettingsTableViewController.swift in Sources */,
 				C324FA4921FEFD86006BDD7D /* WeatherListTableViewController.swift in Sources */,
 				C324FA4B21FEFDE3006BDD7D /* AddWeatherCityViewController.swift in Sources */,
+				C37D953D2207F9B40097CA88 /* BindingTextField.swift in Sources */,
 				C324FA3621FEFA6A006BDD7D /* AppDelegate.swift in Sources */,
 				C324FA6822019F80006BDD7D /* SettingsTableViewCell.swift in Sources */,
 				C324FA7B2203FF11006BDD7D /* Extensions.swift in Sources */,
 				C324FA6622018871006BDD7D /* SettingsViewModel.swift in Sources */,
+				C37D953A2207F92D0097CA88 /* AddCityViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

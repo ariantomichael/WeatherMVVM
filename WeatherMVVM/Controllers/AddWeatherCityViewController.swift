@@ -10,9 +10,29 @@ import UIKit
 
 class AddWeatherCityViewController: UIViewController {
 
-	@IBOutlet weak var zipTextField: UITextField!
-	@IBOutlet weak var stateTextField: UITextField!
-	@IBOutlet weak var cityTextField: UITextField!
+	private var addCityViewModel = AddCityViewModel()
+	
+	@IBOutlet weak var zipTextField: BindingTextField! {
+		didSet {
+			zipTextField.bind {
+				self.addCityViewModel.zipCode = $0
+			}
+		}
+	}
+	@IBOutlet weak var stateTextField: BindingTextField! {
+		didSet {
+			stateTextField.bind {
+				self.addCityViewModel.state = $0
+			}
+		}
+	}
+	@IBOutlet weak var cityTextField: BindingTextField! {
+		didSet {
+			cityTextField.bind {
+				self.addCityViewModel.city = $0
+			}
+		}
+	}
 	var delegate: WeatherListTableViewController?
 	var settingsVM: SettingsViewModel?
 	
@@ -22,6 +42,7 @@ class AddWeatherCityViewController: UIViewController {
     }
     
 	@IBAction func save(_ sender: UIButton) {
+		print(self.addCityViewModel)
 		guard let city = cityTextField.text else {
 			return
 		}
