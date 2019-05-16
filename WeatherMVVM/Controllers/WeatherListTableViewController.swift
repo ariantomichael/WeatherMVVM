@@ -10,7 +10,8 @@ import UIKit
 
 class WeatherListTableViewController: UITableViewController {
 	
-	let a = 1
+	let a = 2
+	
 	let dataSource = WeatherListTableDataSource()
 	var settingsVM = SettingsViewModel()
 	
